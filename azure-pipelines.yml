@@ -8,6 +8,7 @@ trigger:
     branches:
       include:
       - refs/tags/*
+      - master
 
 pool: "Default"
 
