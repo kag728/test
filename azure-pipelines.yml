@@ -6,7 +6,7 @@ resources:
     name: kag728/drafts
 
 trigger:
-- main
+- master
 
 pool: 'Default'
 
