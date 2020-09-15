@@ -5,8 +5,14 @@ resources:
     endpoint: MyFirstProject
     name: kag728/drafts
 
-trigger:
-- master
+pr:
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/old*
+  drafts: true
 
 pool: 'Default'
 
