@@ -8,7 +8,7 @@ resources:
       branches:
         include: [ master ] # branch names which will trigger a build
       tags:
-        include: [refs/*]
+        include: [refs/tags/*]
 
 pool: 'Default'
 
