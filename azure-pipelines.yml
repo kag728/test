@@ -4,9 +4,11 @@ resources:
     type: github
     endpoint: MyFirstProject
     name: kag728/drafts
-
-trigger: 
- - master
+    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
+      branches:
+        include: [ master ] # branch names which will trigger a build
+      tags:
+        include: [refs/*]
 
 pool: 'Default'
 
